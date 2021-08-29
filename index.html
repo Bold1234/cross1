@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <div class="exit" style="text-align: right;">
+        <button onclick="exitpage()" type="button"><i style="color: grey;padding: 5px 5px 5px 5px;" class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+<h1>hello world</h1>
+
+    <script src="exit.js"></script>
+    <script>
+        function exitpage(){
+            Confirm1.open({
+                title: 'Exit Page',
+                message: 'Are you sure to exit',
+                onok: () => {
+                    
+                  let new_window =
+open(location, '_self');
+  
+ // Close this window
+  new_window.close();
+ return false;
+                }
+            }) 
+                }
+        
+    </script>
+    
+</body>
+</html>
